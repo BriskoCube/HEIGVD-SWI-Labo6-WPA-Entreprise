@@ -66,16 +66,28 @@ Dans cette première partie, vous allez analyser [une connexion WPA Entreprise](
 	- 4-way handshake
 
 ### Répondez aux questions suivantes :
- 
+
+TEMPORAIRE : Filtres utiles : `eap` et `wlan.addr==30:74:96:70:df:32` (mac du client)
+
+![full_exchange](img/full_exchange.PNG)
+
+
+
 > **_Question :_** Quelle ou quelles méthode(s) d’authentification est/sont proposé(s) au client ?
-> 
+>
 > **_Réponse :_** 
+>
+> 
 
 ---
 
 > **_Question:_** Quelle méthode d’authentification est finalement utilisée ?
-> 
-> **_Réponse:_** 
+>
+> **_Réponse:_** La méthode finalement utilisée est le protocole EAP-PEAP. On peut voir que l'AP propose EAP-TLS mais le client demande EAP-PEAP.
+>
+> ** A COMPLETER **
+>
+> ![nak_tls_eap](img/nak_tls_eap.PNG)
 
 ---
 
