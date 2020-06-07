@@ -168,17 +168,13 @@ TEMPORAIRE : Filtres utiles : `eap` et `wlan.addr==30:74:96:70:df:32` (mac du cl
 
 > **_Question :_** Quelle ou quelles méthode(s) d’authentification est/sont proposé(s) au client ?
 >
-> **_Réponse :_** 
->
-> 
+> **_Réponse :_** EAP-TLS est proposé au client.
 
 ---
 
 > **_Question:_** Quelle méthode d’authentification est finalement utilisée ?
 >
 > **_Réponse:_** La méthode finalement utilisée est le protocole EAP-PEAP. On peut voir que l'AP propose EAP-TLS mais le client demande EAP-PEAP.
->
-> ** A COMPLETER **
 >
 > ![nak_tls_eap](img/nak_tls_eap.PNG)
 
@@ -188,12 +184,11 @@ TEMPORAIRE : Filtres utiles : `eap` et `wlan.addr==30:74:96:70:df:32` (mac du cl
 > 
 > - a. Le serveur envoie-t-il un certificat au client ? Pourquoi oui ou non ?
 > 
-> **_Réponse:_**
+> **_Réponse:_** Oui, le client envoie son certificat au client (*packet 21498 et les fragments*). Le certificat du serveur est nécessaire au client pour qu'il puisse authentifier le serveur.
 > 
 > - b. Le client envoie-t-il un certificat au serveur ? Pourquoi oui ou non ?
 > 
-> **_Réponse:_**
-> 
+> **_Réponse:_** Non, le client n'envoie pas de certificat au serveur. Ceci est du au fait que la méthode finalement choisie (EAP-PEAP) utilise comme vu ci-dessus une authentification du serveur par le client avec certificat mais à l'inverse une authentification "interne" est effectuée (MS-CHAPv2 par exemple) avec le username et le mot de passe du client (cette authentification interne est protégée par le tunnel TLS). 
 
 ---
 
