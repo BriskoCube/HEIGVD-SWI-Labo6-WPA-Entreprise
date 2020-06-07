@@ -50,18 +50,111 @@ rfkill unblock wlan
 Dans cette première partie, vous allez analyser [une connexion WPA Entreprise](files/auth.pcap) avec Wireshark et fournir des captures d’écran indiquant dans chaque capture les données demandées.
 
 - Comparer [la capture](files/auth.pcap) au processus d’authentification donné en théorie (n’oubliez pas les captures d'écran pour illustrer vos comparaisons !). En particulier, identifier les étapes suivantes :
+	
 	- Requête et réponse d’authentification système ouvert
- 	- Requête et réponse d’association (ou reassociation)
-	- Négociation de la méthode d’authentification entreprise
+	
+	> ![open_1](img\open_1.PNG)
+	>
+	> 
+	>
+	> ![open_2](img\open_2.PNG)
+	
+	
+	
+	  - Requête et réponse d’association (ou reassociation)
+	
+	> ![assoc_1](img\assoc_1.PNG)
+	>
+	> 
+	>
+	> ![assoc_2](img\assoc_2.PNG)
+	
+	
+	
 	- Phase d’initiation. Arrivez-vous à voir l’identité du client ?
-	- Phase hello :
-		- Version TLS
-		- Suites cryptographiques et méthodes de compression proposées par le client et acceptées par l’AP
-		- Nonces
-		- Session ID
+	
+	> ![req_ident](img\req_ident.PNG)
+	>
+	> 
+	>
+	> ![resp_ident](img\resp_ident.PNG)
+	
+	
+	
+	- Négociation de la méthode d’authentification entreprise
+	
+	> ![start](img\start.PNG)
+	>
+	> 
+	>
+	> ![nak](img\nak.PNG)
+	>
+	> 
+	>
+	> ![start_peap](img\start_peap.PNG)
+	
+	
+	
+	- Phase hello:
+	
+	  > ![tlsc_hello](img\tlsc_hello.PNG)
+	  >
+	  > 
+	  >
+	  > ![tlsc_hello](img\tlsc_hello.PNG)
+	  >
+	  > 
+	  >
+	  > ![tlss_hello](img\tlss_hello.PNG)
+	
+	  
+	
+	  
+	
+	  - Version TLS
+	
+	  > La version de TLS utilisé est la v1
+	
+	  
+	
+	  - Suites cryptographiques et méthodes de compression proposées par le client et acceptées par l’AP
+	
+	  >Suites proposées par le client
+	  >
+	  >![cipher suites](img\cipher suites.PNG)
+	  >
+	  >
+	  >
+	  >Suite cryptographique utilisée: `TLS_RSA_WITH_AES_256_CBC_SHA`
+	  >
+	  >
+	  >
+	  >Le client propose `null` comme méthode de compression. Et le serveur choisis la seul méthode possible: `null`
+	
+	  
+	
+	  - Nonces
+	
+	  > Client: `16e24a729c4b60609b8ce482014ac38f1e9cb8cf2bf8fd30bf8995f1`
+	  >
+	  > Serveur: `003b6c2676ffd79814e56c065e5b0c39cb26600148ca1e9b3e8af83426d46e11`
+	
+	  
+	
+	  - Session ID
+	
+	  > Client: `9f1bbf1e90b88366a836db08d659f906a637ac31920e06f622762ca6c522a64f`
+	  >
+	  > Serveur: `ad41641ec2a7d1d5a9f6586c05703a8cbdbf6ef0053ad517f6e69b286804f5f2`
+	
+	  
+	
 	- Phase de transmission de certificats
-	 	- Echanges des certificats
-		- Change cipher spec
+	
+	
+	
+	  - Echanges des certificats
+	  - Change cipher spec
 	- Authentification interne et transmission de la clé WPA (échange chiffré, vu comme « Application data »)
 	- 4-way handshake
 
