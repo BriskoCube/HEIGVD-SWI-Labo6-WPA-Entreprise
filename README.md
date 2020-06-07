@@ -154,15 +154,31 @@ Dans cette première partie, vous allez analyser [une connexion WPA Entreprise](
 	
 	- Phase de transmission de certificats
 	
-	- Echanges des certificats
+	  - Echanges des certificats
+	
+	  > ![certificats](img/certificats.PNG)
+	
+	  
 	
 	  - Change cipher spec
-	- Authentification interne et transmission de la clé WPA (échange chiffré, vu comme « Application data »)
-	- 4-way handshake
+	
+	  >![change_cipher](img/change_cipher.PNG)
+	
+	  
+	
+	  - Authentification interne et transmission de la clé WPA (échange chiffré, vu comme « Application data »)
+	
+	  > ![appdara](img/appdara.PNG)
+	
+	  
+	
+	  - 4-way handshake
+	
+	  > ![4way](img/4way.PNG)
+	
+	
 
 ### Répondez aux questions suivantes :
-
-TEMPORAIRE : Filtres utiles : `eap` et `wlan.addr==30:74:96:70:df:32` (mac du client)
 
 ![full_exchange](img/full_exchange.PNG)
 
