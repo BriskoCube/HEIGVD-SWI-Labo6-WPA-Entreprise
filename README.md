@@ -73,6 +73,8 @@ Dans cette première partie, vous allez analyser [une connexion WPA Entreprise](
 	
 	- Phase d’initiation. Arrivez-vous à voir l’identité du client ?
 	
+	> Le client utilise le nom d'utilisateur: `einet\joel.gonin` 
+	>
 	> ![req_ident](img/req_ident.PNG)
 	>
 	> 
@@ -83,6 +85,7 @@ Dans cette première partie, vous allez analyser [une connexion WPA Entreprise](
 	
 	- Négociation de la méthode d’authentification entreprise
 	
+	>
 	> ![start](img/start.PNG)
 	>
 	> 
@@ -151,9 +154,8 @@ Dans cette première partie, vous allez analyser [une connexion WPA Entreprise](
 	
 	- Phase de transmission de certificats
 	
+	- Echanges des certificats
 	
-	
-	  - Echanges des certificats
 	  - Change cipher spec
 	- Authentification interne et transmission de la clé WPA (échange chiffré, vu comme « Application data »)
 	- 4-way handshake
