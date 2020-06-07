@@ -124,7 +124,7 @@ Dans cette première partie, vous allez analyser [une connexion WPA Entreprise](
 	
 	  >Suites proposées par le client
 	  >
-	  >![`cipher suites`](img/cipher suites.PNG)
+	  >![`cipher suites`](img/cipher_suites.PNG)
 	  >
 	  >
 	  >
@@ -162,6 +162,8 @@ Dans cette première partie, vous allez analyser [une connexion WPA Entreprise](
 	
 	  - Change cipher spec
 	
+	  >Point depuis le quel les échanges passent en chiffré
+	  >
 	  >![change_cipher](img/change_cipher.PNG)
 	
 	  
