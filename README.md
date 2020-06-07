@@ -53,59 +53,59 @@ Dans cette première partie, vous allez analyser [une connexion WPA Entreprise](
 	
 	- Requête et réponse d’authentification système ouvert
 	
-	> ![open_1](img\open_1.PNG)
+	> ![open_1](img/open_1.PNG)
 	>
 	> 
 	>
-	> ![open_2](img\open_2.PNG)
+	> ![open_2](img/open_2.PNG)
 	
 	
 	
 	  - Requête et réponse d’association (ou reassociation)
 	
-	> ![assoc_1](img\assoc_1.PNG)
+	> ![assoc_1](img/assoc_1.PNG)
 	>
 	> 
 	>
-	> ![assoc_2](img\assoc_2.PNG)
+	> ![assoc_2](img/assoc_2.PNG)
 	
 	
 	
 	- Phase d’initiation. Arrivez-vous à voir l’identité du client ?
 	
-	> ![req_ident](img\req_ident.PNG)
+	> ![req_ident](img/req_ident.PNG)
 	>
 	> 
 	>
-	> ![resp_ident](img\resp_ident.PNG)
+	> ![resp_ident](img/resp_ident.PNG)
 	
 	
 	
 	- Négociation de la méthode d’authentification entreprise
 	
-	> ![start](img\start.PNG)
+	> ![start](img/start.PNG)
 	>
 	> 
 	>
-	> ![nak](img\nak.PNG)
+	> ![nak](img/nak.PNG)
 	>
 	> 
 	>
-	> ![start_peap](img\start_peap.PNG)
+	> ![start_peap](img/start_peap.PNG)
 	
 	
 	
 	- Phase hello:
 	
-	  > ![tlsc_hello](img\tlsc_hello.PNG)
+	  > ![tlsc_hello](img/tlsc_hello.PNG)
 	  >
 	  > 
 	  >
-	  > ![tlsc_hello](img\tlsc_hello.PNG)
+	  > ![tlsc_hello](img/tlsc_hello.PNG)
 	  >
 	  > 
 	  >
-	  > ![tlss_hello](img\tlss_hello.PNG)
+	  > ![tlss_hello](img/tlss_hello.PNG)
 	
 	  
 	
@@ -121,7 +121,7 @@ Dans cette première partie, vous allez analyser [une connexion WPA Entreprise](
 	
 	  >Suites proposées par le client
 	  >
-	  >![cipher suites](img\cipher suites.PNG)
+	  >![`cipher suites`](img/cipher suites.PNG)
 	  >
 	  >
 	  >
